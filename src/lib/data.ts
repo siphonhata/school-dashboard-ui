@@ -526,7 +526,7 @@ export const examsData = [
     subject: "Math",
     class: "1A",
     teacher: "Martha Morris",
-    date: "2025-01-01",
+    date: "2024-24-09",
   },
   {
     id: 2,
@@ -774,7 +774,7 @@ export const eventsData = [
     id: 1,
     title: "Lake Trip",
     class: "1A",
-    date: "2025-01-01",
+    date: "2025-09-23",
     startTime: "10:00",
     endTime: "11:00",
   },
@@ -921,14 +921,14 @@ export const calendarEvents = [
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(2024, 8, 23, 8, 0),
+    end: new Date(2024, 8, 23, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(2024, 8, 23, 9, 0),
+    end: new Date(2024, 8, 23, 9, 45),
   },
   {
     title: "Biology",
