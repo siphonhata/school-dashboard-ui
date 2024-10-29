@@ -10,7 +10,7 @@ const TableSearch = () => {
         className="w-[200px] p-2 bg-transparent outline-none"
       />
     </div>
-  );
+  ); 
 };
 
 export default TableSearch;
