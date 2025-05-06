@@ -56,7 +56,7 @@ const AssignmentListPage = () => {
           {role === "admin" || role === "teacher" && (
             <>
               <FormModal table="assignment" type="update" data={item} />
-              <FormModal table="assignment" type="delete" id={item.id} />
+              {/* <FormModal table="assignment" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -87,7 +87,7 @@ const AssignmentListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={assignmentsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

@@ -46,7 +46,7 @@ const LessonListPage = () => {
           {role === "admin" && (
             <>
               <FormModal table="lesson" type="update" data={item} />
-              <FormModal table="lesson" type="delete" id={item.id} />
+              {/* <FormModal table="lesson" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -75,7 +75,7 @@ const LessonListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={lessonsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

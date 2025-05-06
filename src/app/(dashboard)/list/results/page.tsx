@@ -71,7 +71,7 @@ const ResultListPage = () => {
           {role === "admin" || role === "teacher" && (
             <>
               <FormModal table="result" type="update" data={item} />
-              <FormModal table="result" type="delete" id={item.id} />
+              {/* <FormModal table="result" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -100,7 +100,7 @@ const ResultListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={resultsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

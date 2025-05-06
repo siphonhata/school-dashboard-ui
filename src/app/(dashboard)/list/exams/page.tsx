@@ -53,7 +53,7 @@ const ExamListPage = () => {
           {role === "admin" || role === "teacher" && (
             <>
               <FormModal table="exam" type="update" data={item} />
-              <FormModal table="exam" type="delete" id={item.id} />
+              {/* <FormModal table="exam" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -82,7 +82,7 @@ const ExamListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={examsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

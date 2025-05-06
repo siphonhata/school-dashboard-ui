@@ -46,7 +46,7 @@ const AnnouncementListPage = () => {
           {role === "admin" && (
             <>
               <FormModal table="announcement" type="update" data={item} />
-              <FormModal table="announcement" type="delete" id={item.id} />
+              {/* <FormModal table="announcement" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -79,7 +79,7 @@ const AnnouncementListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={announcementsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

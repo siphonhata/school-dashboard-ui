@@ -40,7 +40,7 @@ const SubjectListPage = () => {
           {role === "admin" && (
             <>
               <FormModal table="subject" type="update" data={item} />
-              <FormModal table="subject" type="delete" id={item.id} />
+              {/* <FormModal table="subject" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -69,7 +69,7 @@ const SubjectListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={subjectsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };

@@ -60,7 +60,7 @@ const EventListPage = () => {
           {role === "admin" && (
             <>
               <FormModal table="event" type="update" data={item} />
-              <FormModal table="event" type="delete" id={item.id} />
+              {/* <FormModal table="event" type="delete" id={item.id} /> */}
             </>
           )}
         </div>
@@ -89,7 +89,7 @@ const EventListPage = () => {
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={eventsData} />
       {/* PAGINATION */}
-      <Pagination />
+      <Pagination page={0} count={0} />
     </div>
   );
 };
