@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const SplashScreen = () => {
   return (
@@ -13,7 +14,7 @@ const SplashScreen = () => {
           className="mb-8"
         >
           <div className="w-24 h-24 bg-white rounded-full mx-auto flex items-center justify-center">
-            <img
+            <Image
               src="/museums.jpg"
               alt="Logo"
               className="w-16 h-16 object-cover rounded-full"
